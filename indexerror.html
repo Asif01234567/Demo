@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+    body {
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .logo {
+        width: 107px;
+        height: 81.24px;
+        margin-bottom: 20px;
+    }
+
+    .input-field {
+        width: 435px;
+        height: 47px;
+        border-radius: 5px;
+        border: 1px solid #ced4da;
+        margin-bottom: 20px;
+    }
+
+    .submit-btn {
+        width: 435px;
+        height: 47px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        background-color: #CF682F;
+        color: white;
+        position: relative;
+    }
+
+    .submit-btn:hover {
+        background-color: #a4511e;
+    }
+
+    .forgot-password {
+        margin-bottom: 20px;
+    }
+
+    
+
+    @media (max-width: 1400px) {
+        .input-field,
+        .submit-btn {
+            width: 400px;
+        }
+    }
+
+   
+    @media (max-width: 1024px) {
+        .input-field,
+        .submit-btn {
+            width: 300px;
+        }
+    }
+
+  
+    @media (max-width: 390px) {
+        .input-field,
+        .submit-btn {
+            width: 250px;
+        }
+        
+    }
+
+    
+    .btn i {
+        font-size: 14px;
+    }
+
+   
+
+
+    .error-message {
+        display: none; 
+        position: relative; 
+        height: 47px;
+        margin-top: 10px; 
+        border-radius: 5px;
+        background-color: #F6647F; 
+        padding: 10px;
+        text-align: center;
+        color: white; 
+        font-weight: bold;
+    }
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .social-icons img {
+        width: 24px;
+        height: 24px;
+        margin: 0 10px; 
+    }
+
+    .copyright {
+        margin-top: 20px;
+    }
+
+</style>
+</head>
+<body>
+
+<img src="./logo.png" alt="Logo" class="logo">
+
+<form id="login-form">
+    <div class="form-group">
+        <input type="text" class="form-control input-field" placeholder="USERNAME" id="username">
+    </div>
+    <div class="form-group">
+        <input type="password" class="form-control input-field" placeholder="PASSWORD" id="password">
+        <div class="error-message" id="error-message">Invalid credentials. Please try again.</div>
+    </div>
+    <button type="submit" class="btn btn-primary submit-btn">
+        SIGN IN
+    </button>
+</form>
+
+
+<p class="forgot-password"><a href="#">Forgot Password?</a></p>
+
+<div class="social-icons">
+    <img src="./Flat_copy.png" alt="Facebook">
+    <img src="./linkedin_square 1.png" alt="LinkedIn">
+    <img src="./twitter-2 1.png" alt="Twitter">
+</div>
+
+<p class="copyright">© CopyRight Dyaz Innovate 2023. All rights reserved.</p>
+
+<script>
+document.getElementById("login-form").addEventListener("submit", function(event) {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+   
+    if (!username || !password) {
+        event.preventDefault();
+        document.getElementById("error-message").style.display = "block"; 
+        console.log("Error message displayed.");
+    } else {
+        console.log("Form submitted successfully.");
+    }
+});
+
+</script>
+
+</body>
+</html>
