@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
-<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"> -->
 
     <title>Navigation Template</title>
     <style>
@@ -53,18 +50,18 @@
 
         .topnav ul li {
             padding: 0 20px;
-            position: relative; /* Needed for positioning the lines */
+            position: relative;
         }
 
         .topnav ul li::before,
         .topnav ul li::after {
             content: "";
             position: absolute;
-            top: 50%; /* Align with the middle of the list item */
+            top: 50%; 
             width: 50%;
-            height: 2px; /* Height of the line */
+            height: 2px; 
             background-color: #fff;
-            z-index: -1; /* Push lines behind the text */
+            z-index: -1; 
         }
 
         .topnav ul li::before {
@@ -133,7 +130,7 @@
         }
 
         .dropdown-toggle:hover {
-            background-color: #f18f39; /* Lightish orange */
+            background-color: #f18f39; 
         }
 
         .dropdown-content {
@@ -147,7 +144,7 @@
         }
 
         .dropdown-toggle::after {
-            content: '\25BE'; /* Unicode for down arrow */
+            content: '\25BE'; 
             position: absolute;
             right: 8px;
             top: 50%;
@@ -158,11 +155,11 @@
             display: block;
             padding: 8px;
             text-decoration: none;
-            color: #fff; /* Black */
+            color: #fff; 
         }
 
         .dropdown-content a:hover {
-            background-color: #f18f39; /* Cream */
+            background-color: #f18f39; 
         }
 
         .container {
@@ -201,11 +198,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px; /* Adjust margin as needed */
+    margin-bottom: 10px; 
 }
 
 .subs-button {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50; 
     border: none;
     color: white;
     padding: 10px 20px;
@@ -213,13 +210,13 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin-left: 10px; /* Adjust margin as needed */
+    margin-left: 10px; 
     cursor: pointer;
     border-radius: 5px;
 }
 
 .subs-button:hover {
-    background-color: #45a049; /* Darker green */
+    background-color: #45a049;
 }
 
 
@@ -237,7 +234,7 @@
             border-radius: 5px;
         }
 
-        /* Adjustments for mobile view */
+        
         @media screen and (max-width: 1024px) {
             .sidenav {
                 position: static;
@@ -247,23 +244,20 @@
             }
         }
 
-        /* Media Queries for Responsive Design */
-
-        /* Laptop (1400px) */
         @media screen and (max-width: 1400px) {
             .container {
                 padding: 20px 10px;
             }
         }
 
-        /* iPad Pro (1024px) */
+      
         @media screen and (max-width: 1024px) {
             .sidenav {
                 display: block;
             }
         }
 
-        /* iPhone 12 Pro (390px) */
+      
         @media screen and (max-width: 390px) {
             .logo {
                 width: 30px;
@@ -277,12 +271,12 @@
                 padding: 20px 5px;
             }
             table {
-                width: calc(100% - 165px); /* Adjust width to fit the screen */
-                margin-left: 165px; /* Add left margin to center the table */
-                overflow-x: auto; /* Add horizontal scroll for small screens */
+                width: calc(100% - 165px); 
+                margin-left: 165px; 
+                overflow-x: auto; 
             }
             .card {
-                padding: 10px; /* Adjust padding for smaller screens */
+                padding: 10px; 
             }
         }
 
@@ -305,11 +299,11 @@
 }
 
 .row1 h3 {
-    margin-right: auto; /* Pushes the button to the right */
+    margin-right: auto; 
 }
 
 .row2 input[type="date"], .row2 select, .row2 button {
-    margin-right: 10px; /* Add margin between elements */
+    margin-right: 10px; 
 }
 
 .table-responsive {
@@ -331,24 +325,24 @@ th {
     background-color: #f2f2f2;
 }
 
-/* Start Date Input Field */
+
 input[name="start-date"] {
     width: 176px;
     height: 26px;
     top: 179px;
     left: 187px;
     border-radius: 2px;
-    border: 1px solid #000; /* Assuming black border */
+    border: 1px solid #000;
 }
 
-/* End Date Input Field */
+
 input[name="end-date"] {
     width: 176px;
     height: 26px;
     top: 179px;
     left: 377px;
     border-radius: 2px;
-    border: 1px solid #000; /* Assuming black border */
+    border: 1px solid #000; 
 }
 
 /* Region Input Field */
@@ -358,7 +352,7 @@ select[name="region"] {
     top: 179px;
     left: 567px;
     border-radius: 2px;
-    border: 1px solid #000; /* Assuming black border */
+    border: 1px solid #000; 
 }
 
 /* Search Button */
@@ -369,7 +363,7 @@ button[type="submit"] {
     left: 755px;
     border-radius: 4px;
     background-color: #CF682F;
-    color: #fff; /* Text color */
+    color: #fff; 
     border: none;
     cursor: pointer;
 }
@@ -473,7 +467,7 @@ button[type="submit"] {
 
                         </td>
                     </tr>
-                    <!-- More table rows here -->
+                    
                 </tbody>
             </table>
         </div>
